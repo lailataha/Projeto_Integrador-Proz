@@ -92,11 +92,26 @@ header .logo {
 
   cursor: pointer;
 }
+@media (max-width: 680px) {
+  .navbar {
+    display: none;
+  }
+}
 
 /*---------------------- Navebar ul li a hover -------*/
 .navbar ul li a:hover {
   font-family: Eraser;
   color: white;
+}
+
+.mobile {
+  display: none;
+  margin-right: 4rem;
+}
+@media (max-width: 680px) {
+  .mobile {
+    display: block;
+  }
 }
 
 html {
@@ -135,6 +150,11 @@ a {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem;
+}
+@media (max-width: 680px) {
+  .heading {
+    margin-left: 40px;
+  }
 }
 .card-wrapper {
   display: flex;
@@ -305,5 +325,5 @@ a {
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-google-plus-square:hover {
-  color: #ffffff;
+  color: #de9604;
 }

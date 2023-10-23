@@ -94,13 +94,25 @@ header .logo {
 
   cursor: pointer;
 }
-
+@media (max-width: 780px) {
+  .navbar {
+    display: none;
+  }
+}
 /*---------------------- Navebar ul li a hover -------*/
 .navbar ul li a:hover {
   font-family: Eraser;
   color: white;
 }
-
+.mobile {
+  display: none;
+  margin-right: 4rem;
+}
+@media (max-width: 780px) {
+  .mobile {
+    display: block;
+  }
+}
 /*-----------------------------formulario-------------------*/
 .container {
   background-color: #fff;

@@ -74,9 +74,26 @@ header .logo {
 
   cursor: pointer;
 }
+@media (max-width: 750px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar ul li a:hover {
   font-family: Eraser;
   color: #ffffff;
+}
+.mobile {
+  display: none;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .mobile {
+    display: block;
+  }
 }
 
 /*-----------------------------Texto----------------*/
@@ -134,13 +151,18 @@ section h3 {
 .fa-google-plus-square:hover {
   color: #ca610e;
 }
+@media (max-width: 750px) {
+  .social {
+    display: block;
+  }
+}
 /*--------------------------------card------------------------*/
 
 .--container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
+  height: 10%;
 }
 .card--container {
   padding-block: 5rem;
@@ -151,7 +173,7 @@ section h3 {
   overflow: hidden;
 }
 .card-article {
-  width: 300px;
+  max-width: 600px;
   border-radius: 1.25rem;
   overflow: hidden;
 }
