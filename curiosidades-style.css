@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 9999;
+  background-image: linear-gradient(
+    to left,
+    #f5f360,
+    #ece523,
+    #e8c219,
+    #de9604,
+    #ca610e
+  );
+  background-size: 500% 100%;
+  animation: anima-gradient 5s infinite alternate;
+}
+
+@keyframes anima-gradient {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+header img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 1px 1px 2px 1px #b6b6b6;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  margin-right: 50px;
+  list-style: none;
+}
+header .logo {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logo:hover {
+  font-family: Eraser;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 5rem;
+  margin-right: 50px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px #5e5e5e;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.navbar ul li a:hover {
+  font-family: Eraser;
+  color: white;
+}
+
+main{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  margin-inline: 20px;
+}
+
+.container1, .container2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+.curiosidade1, .curiosidade2, .curiosidade3,
+.curiosidade4, .curiosidade5, .curiosidade6 {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  text-align: unset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curiosidade1 img, .curiosidade2 img, .curiosidade3 img,
+.curiosidade4 img, .curiosidade5 img, .curiosidade6 img{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.curiosidade3 img, .curiosidade2 img, .curiosidade3 img{
+  max-width: 100%;
+  max-height: 240px;
+}
+
+.curiosidade5 img{
+  max-width: 100%;
+  max-height: 500px;
+}
+
+h1, h2, h3, p, ul, li {
+  margin: 2px;
+  padding: 1px;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.curiosidade1, .curiosidade2, .curiosidade3, .curiosidade4, .curiosidade5, .curiosidade6 {
+  padding: 30px;
+}
+
+.curiosidade1 h3, .curiosidade2 h3, .curiosidade3 h3, .curiosidade4 h3, .curiosidade5 h3, .curiosidade6 h3,
+.curiosidade1 p, .curiosidade2 p, .curiosidade3 p, .curiosidade4 p, .curiosidade5 p, .curiosidade6 p,
+.curiosidade5 ul{
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+
+.curiosidade5 ul {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.curiosidade5 li {
+  text-align: start;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.social ul {
+  margin-top: 40px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.social ul li {
+  display: inline-block;
+}
+.social i {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-google-plus-square:hover {
+  color: #ca610e;
+}
+
+@media screen and (max-width: 768px) {}
+  header .logo {
+    font-size: 2rem;
+  }
+
+
