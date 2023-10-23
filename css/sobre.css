@@ -231,7 +231,7 @@ a {
   color: #55acee;
 }
 .fa-instagram {
-  color: #e6683c;
+  color: #e25826;
 }
 .fa-google-plus-square {
   color: #e93921;
@@ -240,7 +240,7 @@ a {
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-google-plus-square:hover {
-  color: #f5f360;
+  color: #ffffff;
 }
 @media screen and (min-width: 700px) {
   .card-wrapper {
@@ -305,5 +305,5 @@ a {
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-google-plus-square:hover {
-  color: #ca610e;
+  color: #ffffff;
 }
