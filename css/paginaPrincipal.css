@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Eraser;
+  src: url(font/Eraser/EraserRegular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 9999;
+  background-image: linear-gradient(
+    to left,
+    #f5f360,
+    #ece523,
+    #e8c219,
+    #de9604,
+    #ca610e
+  );
+  background-size: 500% 100%;
+  animation: anima-gradient 5s infinite alternate;
+}
+
+@keyframes anima-gradient {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+header ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 50px;
+  list-style: none;
+}
+header .logo {
+  margin-top: 5px;
+  margin-left: 40px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px #ffffff;
+}
+.logo:hover {
+  font-family: Eraser;
+  color: white;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px #ffffff;
+  transition: all 0.3s;
+
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar ul li a:hover {
+  font-family: Eraser;
+  color: #ffffff;
+}
+.mobile {
+  display: none;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .mobile {
+    display: block;
+  }
+}
+
+/*-----------------------------Texto----------------*/
+.titulo-p {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+.sobre-titulo {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 20px;
+  margin-left: 50px;
+}
+section h3 {
+  text-align: center;
+  margin-bottom: -4rem;
+  margin-top: 5rem;
+  font-style: italic;
+  font-size: 30px;
+}
+/*--------------------------------Footer-----------------------*/
+.social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 6.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 10px;
+}
+.social ul {
+  margin-top: 40px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.social ul li {
+  display: inline-block;
+}
+.social i {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-google-plus-square:hover {
+  color: #ca610e;
+}
+@media (max-width: 750px) {
+  .social {
+    display: block;
+  }
+}
+/*--------------------------------card------------------------*/
+
+.--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.card--container {
+  padding-block: 5rem;
+}
+.card--content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.card-article {
+  max-width: 600px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.card--image {
+  position: relative;
+  background-color: #ca610e;
+  padding: 0.5rem;
+  margin-bottom: -0.75rem;
+}
+.card--data {
+  background-color: #333;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.card--img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.card--shadow {
+  width: 200px;
+  height: 200px;
+  background-color: #ffe606;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+.card--name {
+  font-size: 22px;
+  color: rgb(57, 97, 207);
+  margin-bottom: 0.75rem;
+}
+.card--descricao {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: left;
+  margin-left: -20px;
+}
+.card--button {
+  display: inline-block;
+  background-color: #ffe606;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 320px) {
+  .card--data {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card--content {
+    margin-inline: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card--container {
+    max-width: 1000px;
+  }
+}
